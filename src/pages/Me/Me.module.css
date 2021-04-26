@@ -84,6 +84,18 @@
     transform: scaleX(1);
 }
 
+.skills{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
 @media only screen and (max-width: 1380px){
     .me_container{
         max-width: 980px;
@@ -93,6 +105,9 @@
 @media only screen and (max-width: 1200px){
     .me_container{
         width: 692px;
+    }
+    li{
+        flex-direction: column;
     }
 }
 
@@ -105,15 +120,7 @@
         line-height: 1.6;
         margin-top: 1rem;
     }
-}
-
-.skills{
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 30px;
-}
-
-li{
-    display: flex;
-    justify-content: space-between;
+    li{
+        flex-direction: column;
+    }
 }
