@@ -1,68 +1,90 @@
-import React from "react";
-import { Switch, Route, Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Switch, Route } from "react-router-dom";
+import { isEmpty } from "lodash";
 
-import Home from "./Home/Home.jsx";
-import Foo from "./Foo/Foo.jsx";
-import Bar from "./Bar/Bar.jsx";
-import Baz from "./Baz/Baz.jsx";
-import Error from "./Error/Error.jsx";
+import Header from "./components/Header/Header.jsx";
 
-// here is some external content. look at the /baz route below
-// to see how this content is passed down to the components via props
-const externalContent = {
-  id: "article-1",
-  title: "An Article",
-  author: "April Bingham",
-  text: "Some text in the article",
-};
+import Home from "./pages/Home/Home.jsx";
+import PostArticle from "./pages/PostArticle/PostArticle.jsx";
+
+import Archives from "./pages/Archives/Archives.jsx";
+import Tags from "./pages/Tags/Tags.jsx";
+import Categories from "./pages/Categories/Categories.jsx";
+import Error from "./pages/Error/Error.jsx";
+import Me from "./pages/Me/Me.jsx";
+
+import Footer from "./components/Footer/Footer.jsx";
+
+import globalStyles from "./global.module.css";
 
 function App() {
-  return (
+  const [fetchedData, setFetchedData] = useState();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      // performs a GET request
+      const response = await fetch("https://demo6332316.mockable.io/zifanan");
+      const responseJson = await response.json();
+      setFetchedData(responseJson);
+    };
+
+    if (isEmpty(fetchedData)) {
+      fetchData();
+    }
+  }, [fetchedData]);
+
+  const homeTitle = { __html: 'Latest Posts<span role="img" aria-label="Star">💫</span>' };
+
+  return isEmpty(fetchedData) ? null : (
     <>
-      <header>
-        <nav>
-          <ul>
-            {/* these links should show you how to connect up a link to a specific route */}
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/foo">Foo</Link>
-            </li>
-            <li>
-              <Link to="/bar/hats/sombrero">Bar</Link>
-            </li>
-            <li>
-              <Link to="/baz">Baz</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+      <Header />
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/foo" exact component={Foo} />
-        {/* passing parameters via a route path */}
+        <Route path="/" exact render={() => <Home posts={Object.values(fetchedData)} title={homeTitle} />} />
         <Route
-          path="/bar/:categoryId/:productId"
+          path="/post/:slug"
           exact
-          render={({ match }) => (
-            // getting the parameters from the url and passing
-            // down to the component as props
-            <Bar
-              categoryId={match.params.categoryId}
-              productId={match.params.productId}
-            />
-          )}
-        />
+          render={({ match }) => {
+            return fetchedData ? <PostArticle post={fetchedData[match.params.slug]}
+            /> : null
+          }} />
+        <Route path="/tags" exact render={() => <Tags posts={Object.values(fetchedData)} />} />
         <Route
-          path="/baz"
+          path="/tags/:tag"
           exact
-          render={() => <Baz content={externalContent} />}
+          render={({ match }) => {
+            let filterPosts = {}
+            Object.values(fetchedData).forEach(post => {
+              if (post.Tags.includes(match.params.tag)) {
+                filterPosts[post.Slug] = post
+              }
+            })
+            return fetchedData ? <Home posts={Object.values(filterPosts)} title={{ __html: 'Tag: ' + match.params.tag }}
+            /> : null
+          }} />
+        <Route path="/categories" exact render={() => <Categories posts={Object.values(fetchedData)} />} />
+        <Route
+          path="/categories/:category"
+          exact
+          render={({ match }) => {
+            let filterPosts = {}
+            Object.values(fetchedData).forEach(post => {
+              console.log()
+              if (post.Category === match.params.category) {
+                filterPosts[post.Slug] = post
+              }
+            })
+            return fetchedData ? <Home posts={Object.values(filterPosts)} title={{ __html: 'Category: ' + match.params.category }}
+            /> : null
+          }} />
+        <Route
+          path="/archives"
+          exact
+          render={() => <Archives posts={Object.values(fetchedData)} />}
         />
+        <Route path="/me" exact component={Me} />
         <Route component={Error} />
       </Switch>
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Categories component correctly 1`] = `
+<div>
+  <div>
+    <picture
+      class="picture"
+    >
+      <source
+        media="(max-width: 768px)"
+        srcset="https://cdn.dribbble.com/users/77918/screenshots/11875016/media/ce38b4de1199891b4986b44b67324afd.png?compress=1&resize=1600x1200"
+      />
+      <source
+        media="(min-width: 1200px)"
+        srcset="https://cdn.dribbble.com/users/77918/screenshots/11875016/media/5de9897f72d20f5b779c0822ec1f9f90.png?compress=1&resize=1600x1200"
+      />
+      <img
+        alt="Chris standing up holding his daughter Elva"
+        src="https://cdn.dribbble.com/users/77918/screenshots/11875016/media/5da4850713b8d1f375e80faaf094f5ae.png?compress=1&resize=1600x1200"
+      />
+    </picture>
+    <article
+      class="categories_container"
+    >
+      <h1
+        class="title"
+      >
+        Categories 
+        <span
+          aria-label="Categories"
+          role="img"
+        >
+          📚
+        </span>
+      </h1>
+      <div
+        class="categories_box"
+      >
+        <div
+          class="category"
+        >
+          <a
+            class="link"
+            href="/categories/undefined"
+          >
+            <span
+              class="name"
+            >
+              undefined
+            </span>
+            <div
+              class="number_wrap"
+            >
+              <span
+                class="number"
+              >
+                1
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+`;

@@ -1,0 +1,46 @@
+.tags_container{
+    max-width: 1100px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.title{
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.004em;
+    margin-bottom: 24px;
+}
+
+.tags_box{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1380px){
+    .tags_container{
+        max-width: 980px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .tags_container{
+        width: 692px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .tags_container{
+        max-width: 366px;
+        width: 87.5%;
+    }
+}
+
+.picture img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}

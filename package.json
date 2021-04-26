@@ -6,6 +6,7 @@
   "proxy": "https://validator.w3.org/",
   "dependencies": {
     "lodash": "4.17.20",
+    "moment": "^2.29.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "5.2.0",

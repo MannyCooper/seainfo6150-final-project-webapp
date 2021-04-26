@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Footer component correctly 1`] = `
+<div>
+  <footer
+    class="footer"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="portrait"
+        class="logo"
+        src="portrait.png"
+      />
+    </a>
+    <nav
+      class="nav"
+    >
+      <span
+        class="copyright"
+      >
+        Copyright © 2021
+      </span>
+      <a
+        class="link"
+        href="/"
+      >
+        Zifan An's Blog
+      </a>
+    </nav>
+  </footer>
+</div>
+`;

@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Footer component correctly 1`] = `
+<div>
+  <header
+    class="header"
+  >
+    <nav
+      class="nav"
+    >
+      <a
+        class="nav_left"
+        href="/"
+      >
+        Zifan An's Blog
+      </a>
+      <ul
+        class="menu"
+      >
+        <li>
+          <a
+            href="/archives"
+          >
+            Archives
+          </a>
+        </li>
+        <li>
+          <a
+            href="/tags"
+          >
+            Tags
+          </a>
+        </li>
+        <li>
+          <a
+            href="/categories"
+          >
+            Categories
+          </a>
+        </li>
+        <li>
+          <a
+            href="/me"
+          >
+            Me
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>
+`;

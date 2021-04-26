@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Error component correctly 1`] = `
+<div>
+  <div
+    class="error_container"
+  >
+    <h1
+      class="title"
+    >
+      <span
+        aria-label="Oops"
+        role="img"
+      >
+        😱 
+      </span>
+      Oops!
+    </h1>
+    <p
+      class="text"
+    >
+      You took a wrong turn.
+    </p>
+    <a
+      class="link"
+      href="/"
+    >
+      Back to Home
+    </a>
+  </div>
+</div>
+`;

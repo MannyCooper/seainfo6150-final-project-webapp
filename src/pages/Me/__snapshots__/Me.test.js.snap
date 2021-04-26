@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Me tests renders correctly 1`] = `
+<div>
+  <div
+    class="me_container"
+  >
+    <h1
+      class="title"
+    >
+      About
+      <br />
+      Me
+      <br />
+      <span
+        aria-label="Me"
+        role="img"
+      >
+        🧑🏻‍💻
+      </span>
+    </h1>
+    <img
+      alt="portrait"
+      class="portrait"
+      src="portrait.png"
+    />
+    <article>
+      <h2
+        class="hi"
+      >
+        <span
+          aria-label="Hi"
+          role="img"
+        >
+          👋 
+        </span>
+        Zifan An
+      </h2>
+      <div
+        class="intro"
+      >
+        <p>
+          Postgrad at the 
+          <a
+            class="NEU"
+            href="https://www.northeastern.edu"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Northeastern University
+          </a>
+          . Alumni of the 
+          <a
+            class="NJUPT"
+            href="http://www.njupt.edu.cn/en/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Nanjing University of Posts and Telecommunications
+          </a>
+          . Technical editors at 
+          <a
+            class="SSPAI"
+            href="https://sspai.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            SSPAI
+          </a>
+          .
+        </p>
+        <p>
+          In the past four years, I have achieved strong skills in web development, data science, and machine learning. I'm familiar with Java, Python, and JavaScript. And, of course, the associated frameworks and libraries. You can see the technical stack in more detail below. At the same time, I also published a paper in the field of AI related to paralanguage: Exploration of Acoustic and Lexical Cues for the INTERSPEECH 2020 Computational Paralinguistic Challenge.
+        </p>
+        <h2
+          class="skills"
+        >
+          Technical Skills:
+        </h2>
+        <ul>
+          <li>
+            <p>
+              <b>
+                Programming Languages:
+              </b>
+            </p>
+            <p>
+              Java, Python, JavaScript, HTML, CSS, Swift, SQL, MATLAB
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>
+                Framework/Libraries:
+              </b>
+            </p>
+            <p>
+              Vue.js, React.js, Node.js, scikit-learn, TensorFlow, Hadoop, SwiftUl, JavaFX, Scrapy, Git...
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>
+                Database:
+              </b>
+            </p>
+            <p>
+              MySQL, MongoDB, Redis
+            </p>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</div>
+`;

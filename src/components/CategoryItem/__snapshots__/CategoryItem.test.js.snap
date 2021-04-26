@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the CategoryItem component correctly 1`] = `
+<div>
+  <div
+    class="category"
+  >
+    <a
+      class="link"
+      href="/categories/Test"
+    >
+      <span
+        class="name"
+      >
+        Test
+      </span>
+      <div
+        class="number_wrap"
+      >
+        <span
+          class="number"
+        >
+          10
+        </span>
+      </div>
+    </a>
+  </div>
+</div>
+`;

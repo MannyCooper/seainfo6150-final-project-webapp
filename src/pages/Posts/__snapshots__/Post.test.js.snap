@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Posts component correctly 1`] = `
+<div>
+  <div>
+    <div>
+       Fetching Data... 
+    </div>
+  </div>
+</div>
+`;

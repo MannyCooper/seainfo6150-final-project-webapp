@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the ArchiveItem component correctly 1`] = `
+<div>
+  <a
+    class="post_link"
+    href="/post/undefined"
+  >
+    <div
+      class="item"
+    >
+      <img
+        class="small_image"
+      />
+      <article
+        class="content"
+      >
+        <header
+          class="info"
+        >
+          <time
+            class="date"
+          >
+            Invalid date
+          </time>
+          <span
+            class="category"
+          />
+        </header>
+        <h2
+          class="title"
+        />
+      </article>
+    </div>
+  </a>
+</div>
+`;

@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the ArchiveItem component correctly 1`] = `
+<div>
+  <ul
+    class="post_list"
+  >
+    <li
+      class="post_item"
+    >
+      <header
+        class="header"
+      >
+        <img
+          alt="7 UX Deliverables: What will I be making as a UX designer?"
+          class="image"
+          src="https://cdn.dribbble.com/assets/art-banners/romainbriaux-284c5096f64764a70b44faa03268b263c4b37365e988446318005ff367ced170.webp"
+        />
+      </header>
+      <div
+        class="description"
+      >
+        <article>
+          <a
+            class="category"
+            href="/"
+          >
+            Designer
+          </a>
+          <h2
+            class="post_title"
+          >
+            7 UX Deliverables: What will I be making as a UX designer?
+          </h2>
+        </article>
+        <time
+          class="date"
+          datetime="2019-08-25"
+        >
+          Aug 25th, 2019
+        </time>
+      </div>
+      <a
+        class="post_link"
+        href="/post/ux-designer"
+      />
+    </li>
+  </ul>
+</div>
+`;

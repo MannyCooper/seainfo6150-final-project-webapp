@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the TagItem component correctly 1`] = `
+<div>
+  <div
+    class="tag"
+  >
+    <a
+      class="link"
+      href="/tags/Test"
+    >
+      <span
+        class="name"
+      >
+        Test
+      </span>
+      <span
+        class="number"
+      >
+        10
+      </span>
+    </a>
+  </div>
+</div>
+`;

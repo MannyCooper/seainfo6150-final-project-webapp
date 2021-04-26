@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the HTMLText component correctly 1`] = `
+<div>
+  <div
+    class="content"
+  >
+    <p>
+      <a
+        href="https://www.pixijs.com/"
+      >
+        PixiJS
+      </a>
+    </p>
+  </div>
+</div>
+`;

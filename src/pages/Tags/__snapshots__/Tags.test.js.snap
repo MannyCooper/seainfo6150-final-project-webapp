@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Tags component correctly 1`] = `
+<div>
+  <div>
+    <picture
+      class="picture"
+    >
+      <source
+        media="(max-width: 768px)"
+        srcset="https://cdn.dribbble.com/users/77918/screenshots/15381710/media/de4bb66f7862d49d99fb73531f6ce0bb.png?compress=1&resize=1600x1200"
+      />
+      <source
+        media="(min-width: 1200px)"
+        srcset="https://cdn.dribbble.com/users/77918/screenshots/15381710/media/de4bb66f7862d49d99fb73531f6ce0bb.png?compress=1&resize=1600x1200"
+      />
+      <img
+        alt="Chris standing up holding his daughter Elva"
+        src="https://cdn.dribbble.com/users/77918/screenshots/15381710/media/e507e4807c0a0e6f4bbc1aac19e63232.png?compress=1&resize=1600x1200"
+      />
+    </picture>
+    <article
+      class="tags_container"
+    >
+      <h1
+        class="title"
+      >
+        Tags 
+        <span
+          aria-label="Tags"
+          role="img"
+        >
+          🏷️
+        </span>
+      </h1>
+      <div
+        class="tags_box"
+      >
+        <div
+          class="tag"
+        >
+          <a
+            class="link"
+            href="/tags/UX"
+          >
+            <span
+              class="name"
+            >
+              UX
+            </span>
+            <span
+              class="number"
+            >
+              1
+            </span>
+          </a>
+        </div>
+        <div
+          class="tag"
+        >
+          <a
+            class="link"
+            href="/tags/designer"
+          >
+            <span
+              class="name"
+            >
+              designer
+            </span>
+            <span
+              class="number"
+            >
+              1
+            </span>
+          </a>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+`;
